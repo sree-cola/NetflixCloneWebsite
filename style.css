@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: "Poppins",sans-serif;
+    background-color: black;
+}
+.bg_container{
+    height: 100vh;
+    width: 100%;
+    background-image:url(assets/images/BackgroundImage.jpg);
+}
+/*overlay effect*/
+.overlay{
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+}
+
+/*header section start*/
+.nav_bar
+{
+    width:100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding-top: 1%;
+}
+
+.nav_bar_netflix img{
+    height:100%;
+    width: 100%;
+}
+.nav_bar_netflix{
+    height:35%;
+    width:11%;
+    margin-left: 8%;
+}
+.nav_bar_items{
+    display: flex;
+    gap: 10px;
+    width:20%;
+    margin-right: 5%;
+    
+}
+.drop_down_container{
+    width: 100%;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+}
+#languageselect{
+    background:rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border:none
+}
+.lang{
+    color: black;
+}
+.material-symbols-outlined{
+    margin-top: 12%;
+    
+}
+.signin_button
+{
+    height: 100%;
+    width: 170%;
+    background-color: #dc030f;
+    border-radius: 5%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*header section end*/
+/*section1 start*/
+.section1
+{
+    height: 69%;
+}
+.main2{
+    position: relative;
+    top:20%;
+    left: 25%;
+    width:45%;
+    height: 60%;
+    text-align:center;
+}
+.para1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.para2{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#mypara{
+    margin-top: 5px;
+    font-size: 17px;
+}
+.mainbutton{
+    display: flex;
+    gap:5px;
+    height:20%;
+    margin-left:7%;
+    margin-top:2.5%;
+}
+.mainbutton1{
+    width:60%;
+    height: 100%;
+}
+
+#email{
+    background-color: #1f2736;
+    color: white;
+    width:100%;
+    height: 100%;
+    border: 1px solid white;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#email::placeholder
+{
+    color: white;
+    opacity: 1;
+    font-size: 15px;
+}
+#start{
+    background-color: #dc030f;;
+    width:30%;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    color: white;
+}
+/*section1 end*/
+/*section2 start*/
+.section2{
+    height: 50vh;
+}
+.section2 h1{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.maincontainer1{
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.maincontainer1 h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.maincontainer2{
+    background-color: #1e1427;
+    width:20%;
+    height:80%;
+    margin-left: 5%;
+    position: relative;
+    border-radius: 10%;
+}
+.maincontainer2 h3,p{
+margin-top: 10%;
+margin-left: 5%;
+}
+.maincontainer3{
+    background-color: #1e1427;
+    width:20%;
+    height:80%;
+    margin-left: 2%;
+    position: relative;
+    border-radius: 10%;
+}
+.maincontainer3 h3,p{
+margin-top: 10%;
+margin-left: 5%;
+}
+.maincontainer2 .maincontainer3 p{
+    margin-top: 5%;
+}
+.prng1{
+    position: absolute;
+    top:67%;
+    left:67%;
+}
+
+/*section2 end*/
+/*section3 start*/
+.section3 {
+    width: 100%;
+    height: 80vh;
+}
+
+.section3 h1 {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.mainbox1 {
+    background-color: #dc030f;
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subs1 {
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-bottom: 10px solid black;
+}
+.dropdown-header {
+    display: flex; /* Flex container for header and button */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    min-height: 100px;
+}
+.dropdown h3 {
+    position: relative;
+    width: 70%;
+    left: 2%;
+    font-size: 25px;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #2d2d2d; /* Dark background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    cursor: pointer; 
+    width: 10%;   
+    margin-left: auto; 
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    background-color: #2d2d2d;  /* Dark background */
+    width: 100%;    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow */
+    z-index: 1;               /* Ensure it appears above other elements */
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.dropdown-content p {
+    color: white;  
+    margin-left: 2%;
+    font-size: 25px;
+    margin-top: 2%;
+    text-decoration: none;   /* No underline */
+    display: block;  
+    width: 100%;
+}
+
+.para8 {
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.dropdown-content.show {
+    display: block;  /* Show when 'show' class is added */ /* Optional padding for dropdown content */
+    background: #2d2d2d; /* Background color for dropdown */
+    color: black; /* Text color for dropdown content */
+    margin-top: 5px; /* Space between dropdown content and the next item */
+}
+
+/*section3 end*/
+/*section4 start*/
+.section4{
+    height: 30vh;
+    width: 100%;
+}
+/*section4 end*/
+/*section5 start*/
+.section5{
+    height: 20vh;
+    width: 100%;
+}
+.section5 h4{
+    text-align: center;
+    margin-bottom: 1%;
+}
+.mainbutton0{
+        width:60%;
+        height: 100%;
+        margin-left: 23%;
+}
+.mainbutton2{
+    display: flex;
+    margin-left:5%;
+    height: 40%;
+    width: 100%;
+    gap:10px;
+}
+#email1{
+    background-color: #1f2736;
+    color: white;
+    width:200%;
+    height: 100%;
+    border: 1px solid white;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#start1{
+    background-color: #dc030f;;
+    width:20%;
+    margin-left: 30%;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    color: white;
+}
+/*section5 end*/
+/*footer*/
+footer{
+    width: 100%;
+    height: 50vh;
+}
+.Question{
+    display: flex;
+    margin-left:5%;
+}
+#under{
+    text-decoration: underline;
+    margin-left: 0.5%;
+}
+.drop_down_container1{
+    width: 8%;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 2px solid white;
+    border-radius: 5%;
+    height: 11%;
+    background:rgba(0,0,0,0.4);
+}
+#languageselect1{
+    background:rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    margin-top: 1%;
+    height: 100%;
+    font-size: 15px;
+    border:none
+}
+#icon{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#under1{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-weight: lighter;
+}
+.slider1{
+    height: 30%;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+}
+.minislider1{
+    
+    height: 100%;
+    width:20%;
+}
+.items{
+    list-style-type: none;
+}
+.items li{
+    padding: 5px;
+    font-size: 15px;
+}
+.items a{
+    color: white;
+}
